@@ -1,0 +1,108 @@
+#page-map {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+}
+
+#page-map aside {
+  width: 440px;
+  padding: 80px;
+
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#page-map aside h2 {
+  margin-top: 64px;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 800;
+}
+
+#page-map aside p {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#page-map aside footer {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 24px;
+}
+
+#page-map aside footer strong {
+  font-weight: 800;
+}
+
+#page-map .leaflet-container {
+  z-index: 0;
+}
+
+#page-map .create-orphanage {
+  z-index: 1;
+  position: absolute;
+
+  right: 48px;
+  bottom: 48px;
+
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+
+  background: #15c3d6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.5s;
+}
+
+#page-map .create-orphanage:hover {
+  background: #17d6eb;
+}
+
+#page-map .map-popup {
+  bottom: -80px !important;
+  left: 40px !important;
+}
+
+#page-map .map-popup .leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+#page-map .map-popup .leaflet-popup-content {
+  color: #0089a5;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page-map .map-popup .leaflet-popup-content a {
+  height: 50px;
+  width: 70px;
+  background: #15c3d6;
+  box-shadow: 17px 28px 41px rgba(23, 142, 166, 0.16);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-map .map-popup .leaflet-popup-tip {
+  display: none;
+}
